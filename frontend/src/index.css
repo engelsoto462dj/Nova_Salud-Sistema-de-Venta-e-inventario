@@ -1,0 +1,69 @@
+/* Nova Salud – Estilo iOS / Apple-inspired */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:          #F2F2F7;
+  --bg-card:     #FFFFFF;
+  --bg-elevated: #FFFFFF;
+  --separator:   rgba(60,60,67,0.12);
+  --label:       #000000;
+  --label2:      rgba(60,60,67,0.60);
+  --label3:      rgba(60,60,67,0.30);
+  --fill:        rgba(120,120,128,0.12);
+  --fill2:       rgba(120,120,128,0.08);
+
+  --blue:        #0A84FF;
+  --blue-light:  #E8F4FF;
+  --green:       #30D158;
+  --green-light: #E8FAF0;
+  --orange:      #FF9F0A;
+  --orange-light:#FFF5E6;
+  --red:         #FF3B30;
+  --red-light:   #FFF0EF;
+  --purple:      #BF5AF2;
+  --teal:        #32ADE6;
+  --indigo:      #5E5CE6;
+
+  --radius-sm:   10px;
+  --radius:      14px;
+  --radius-lg:   20px;
+  --radius-xl:   28px;
+
+  --shadow-sm:   0 1px 3px rgba(0,0,0,0.08), 0 0 1px rgba(0,0,0,0.04);
+  --shadow:      0 4px 16px rgba(0,0,0,0.08), 0 1px 3px rgba(0,0,0,0.05);
+  --shadow-lg:   0 12px 40px rgba(0,0,0,0.12), 0 2px 8px rgba(0,0,0,0.06);
+
+  --font: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
+  --transition: 0.18s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+html { font-size: 16px; -webkit-font-smoothing: antialiased; }
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--label);
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--label3); border-radius: 999px; }
+
+/* Focus ring */
+*:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+button { cursor: pointer; font-family: var(--font); }
+input, select, textarea { font-family: var(--font); }
+a { text-decoration: none; color: var(--blue); }
+
+.sr-only {
+  position: absolute; width: 1px; height: 1px;
+  padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0,0,0,0); border: 0;
+}
